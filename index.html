@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="title">
+      <h1>GCF deploy assistent.</h1>
+    </div>
+    <div class="input-area">
+      <textarea id="input">
+### Instructions: Copy and paste whatever is inside the two lines as shown below and click outside this textarea. ### 
+
+Functions deploy had errors with the following functions:
+	functionNumber!(us-central1)
+    ...
+	functionNumberX(us-central1)
+Function URL (confirmVisitorBooking(us-central1)): https://us-central1-socialdistanceofficepoc.cloudfunctions.net/confirmVisitorBooking
+      </textarea>
+    </div>
+    <div class="output-area">
+      <textarea id="output"></textarea>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
