@@ -5,9 +5,8 @@ inputBoxElement.addEventListener("change", () => {
   arrayOfLines.shift();
   arrayOfLines.pop();
   for (const [i,f] of arrayOfLines.entries()) {
-    const fName = f.split('(')[0]
+    const fName = f.split('(')[0];
     outputCommand = `${outputCommand}functions:${fName.trim()}${i < arrayOfLines.length -1 && ","}`;
   }
   document.querySelector('#output').innerHTML = outputCommand;
-  console.log(outputCommand);
 });
